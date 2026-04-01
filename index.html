@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultrafarma Franca - Drogaria Sara</title>
+    <meta name="description" content="A ULTRAFARMA FRANCA é um compromisso com a saúde e o bem-estar da comunidade.">
+    <meta property="og:title" content="Ultrafarma Franca - Drogaria Sara">
+    <meta property="og:description" content="A ULTRAFARMA FRANCA é um compromisso com a saúde e o bem-estar da comunidade.">
+    <meta property="og:image" content="https://drogasara.com.br/img/1.jpg">
+    <meta property="og:url" content="http://drogasara.com.br">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#FFCC00',
+                            dark: '#E6B800'
+                        },
+                        secondary: '#1A1A1A'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased overflow-x-hidden">
+
+    <header id="header" class="fixed w-full top-0 z-50 transition-transform duration-300 bg-white/40 backdrop-blur-md border-b border-white/30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#inicio" class="text-2xl font-black text-secondary tracking-tighter">ULTRAFARMA<span class="text-primary font-bold text-lg ml-1">FRANCA</span></a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-secondary hover:text-primary font-semibold transition-colors">Início</a>
+                    <a href="#sobre" class="text-secondary hover:text-primary font-semibold transition-colors">Sobre Nós</a>
+                    <a href="#servicos" class="text-secondary hover:text-primary font-semibold transition-colors">Serviços</a>
+                    <a href="#galeria" class="text-secondary hover:text-primary font-semibold transition-colors">Galeria</a>
+                    <a href="#contato" class="text-secondary hover:text-primary font-semibold transition-colors">Contato</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/+5516993763390" target="_blank" class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-bold transition-all shadow-lg hover:shadow-green-500/50 transform hover:-translate-y-0.5">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Peça pelo WhatsApp
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-secondary hover:text-primary focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-lg border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="#inicio" class="text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-semibold">Início</a>
+                <a href="#sobre" class="text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-semibold">Sobre Nós</a>
+                <a href="#servicos" class="text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-semibold">Serviços</a>
+                <a href="#galeria" class="text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-semibold">Galeria</a>
+                <a href="#contato" class="text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-semibold">Contato</a>
+                <a href="https://wa.me/5516993763390" target="_blank" class="text-green-600 hover:text-green-700 block px-3 py-2 rounded-md text-base font-bold flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="img/1.jpg" alt="Interior da Farmácia" class="w-full h-full object-cover object-center animate-zoom">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto fade-in-up">
+            <h1 class="text-5xl md:text-7xl font-black text-white mb-6 drop-shadow-lg">ULTRAFARMA <span class="text-primary">FRANCA</span></h1>
+            <p class="text-xl md:text-3xl text-gray-200 font-light mb-10 drop-shadow-md">Cuidando de você e da sua família todos os dias.</p>
+            <a href="https://wa.me/5516993763390" target="_blank" class="inline-block bg-primary hover:bg-primary-dark text-secondary px-8 py-4 rounded-full font-extrabold text-lg transition-all shadow-[0_0_20px_rgba(255,204,0,0.4)] hover:shadow-[0_0_30px_rgba(255,204,0,0.6)] transform hover:-translate-y-1">
+                Faça seu Pedido Agora
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center glass-panel p-10 rounded-3xl reveal">
+            <h2 class="text-4xl font-black text-secondary mb-8">Sobre Nós</h2>
+            <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                <p>A ULTRAFARMA FRANCA, sob o nome empresarial DROGARIA SARA DE FRANCA LTDA, é mais do que um estabelecimento comercial, é um compromisso com a saúde e o bem-estar da comunidade.</p>
+                <p>Trabalhamos com dedicação para oferecer medicamentos e produtos de alta qualidade, sempre seguindo rigorosamente as normas sanitárias da Anvisa. Nosso objetivo é garantir segurança, eficácia e confiabilidade em cada atendimento.</p>
+                <p>Com uma equipe experiente e altamente qualificada, prezamos por um atendimento humanizado e personalizado, auxiliando nossos clientes na escolha dos melhores tratamentos e soluções para suas necessidades de saúde.</p>
+                <p>Na ULTRAFARMA FRANCA, estamos sempre inovando para trazer mais praticidade e comodidade aos nossos clientes, seja por meio de um atendimento ágil, ampliação de serviços ou novas formas de acesso aos nossos produtos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-gray-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-black text-center text-secondary mb-16 reveal">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <div class="glass-card rounded-2xl p-8 text-center transition-transform hover:-translate-y-2 reveal delay-100">
+                    <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Medicamentos</h3>
+                    <p class="text-gray-600">Ampla variedade de medicamentos de referência, genéricos e similares com os melhores preços.</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 text-center transition-transform hover:-translate-y-2 reveal delay-200">
+                    <svg class="w-12 h-12 text-primary mx-auto mb-4" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Perfumaria</h3>
+                    <p class="text-gray-600">Produtos de higiene, beleza e dermocosméticos das marcas mais reconhecidas do mercado.</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 text-center transition-transform hover:-translate-y-2 reveal delay-300">
+                    <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Atendimento</h3>
+                    <p class="text-gray-600">Farmacêuticos experientes prontos para oferecer orientação humanizada e suporte dedicado.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-black text-center text-secondary mb-16 reveal">Nossa Estrutura</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="overflow-hidden rounded-xl reveal"><img src="img/1.jpg" alt="Fachada dia" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110"></div>
+                <div class="overflow-hidden rounded-xl reveal delay-100"><img src="img/2.jpg" alt="Fachada noite" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110"></div>
+                <div class="overflow-hidden rounded-xl reveal delay-200"><img src="img/3.jpg" alt="Exterior" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110"></div>
+                <div class="overflow-hidden rounded-xl reveal delay-300 md:col-span-2"><img src="img/4.jpg" alt="Perfumaria" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110"></div>
+                <div class="overflow-hidden rounded-xl reveal delay-400"><img src="img/5.jpg" alt="Medicamentos" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="glass-panel p-10 rounded-3xl reveal">
+                    <h2 class="text-4xl font-black text-secondary mb-8">Contato e Localização</h2>
+                    <div class="space-y-6 text-gray-700">
+                        <div>
+                            <h4 class="font-bold text-secondary text-lg">Nome Empresarial</h4>
+                            <p>DROGARIA SARA DE FRANCA LTDA</p>
+                            <p class="text-sm text-gray-500">CNPJ: 56.635.972/0001-07</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-secondary text-lg">Endereço</h4>
+                            <p>R FRANCISCO MARQUES, 1577</p>
+                            <p>VILA PANDOLFO</p>
+                            <p>FRANCA - SP</p>
+                            <p>CEP: 14.406-652</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-secondary text-lg">Telefone</h4>
+                            <p class="text-xl font-medium text-primary-dark"> (16) 99376-3390 - (16) 3720-8741</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-secondary text-lg">E-mail</h4>
+                            <p class="break-all">sara.nfe@hotmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal delay-200 rounded-3xl overflow-hidden shadow-lg h-[400px] lg:h-auto">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.57868846114!2d-47.4069894!3d-20.5360984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a5f4c3a7d2b5%3A0x8085358055a40db8!2sR.%20Francisco%20Marques%2C%201577%20-%20Vila%20Pandolfo%2C%20Franca%20-%20SP%2C%2014406-652!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-secondary pt-12 pb-8 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-black mb-4">ULTRAFARMA <span class="text-primary">FRANCA</span></h3>
+            <p class="text-gray-400 mb-2">DROGARIA SARA DE FRANCA LTDA - CNPJ: 56.635.972/0001-07</p>
+            <p class="text-gray-400 text-sm mb-8">&copy; <span id="year"></span> Todos os direitos reservados.</p>
+            <button id="open-modal" class="text-gray-500 hover:text-white transition-colors text-sm underline">Política de Privacidade</button>
+        </div>
+    </footer>
+
+    <div id="modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 transform scale-95 transition-transform duration-300 relative">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-secondary focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h2 class="text-2xl font-bold text-secondary mb-6">Política de Privacidade</h2>
+            <div class="space-y-4 text-gray-600">
+                <p>Esta Política de Privacidade descreve como a DROGARIA SARA DE FRANCA LTDA ("nós", "nosso" ou "empresa") lida com informações. Como um site institucional simples, o respeito à sua privacidade é prioridade.</p>
+                <h3 class="font-bold text-gray-800">1. Coleta de Dados</h3>
+                <p>Não coletamos, armazenamos ou processamos dados pessoais diretamente por meio deste site. A interação principal ocorre via redirecionamento para o aplicativo de mensagens WhatsApp.</p>
+                <h3 class="font-bold text-gray-800">2. Cookies e Rastreamento</h3>
+                <p>Este site não utiliza cookies de rastreamento de terceiros para fins de marketing direto. Cookies técnicos podem ser utilizados apenas para o funcionamento básico da infraestrutura de hospedagem.</p>
+                <h3 class="font-bold text-gray-800">3. Links Externos</h3>
+                <p>Nosso site contém links para serviços externos (como WhatsApp e Google Maps). Não somos responsáveis pelas práticas de privacidade ou pelo conteúdo desses serviços terceirizados.</p>
+                <h3 class="font-bold text-gray-800">4. Alterações na Política</h3>
+                <p>Reservamo-nos o direito de atualizar ou modificar esta Política de Privacidade a qualquer momento, sem aviso prévio. Recomendamos revisar esta página periodicamente.</p>
+                <h3 class="font-bold text-gray-800">5. Contato</h3>
+                <p>Para dúvidas relacionadas, entre em contato via e-mail: sara.nfe@hotmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
